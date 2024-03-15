@@ -1,0 +1,86 @@
+/*------ RESET ---------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: aquamarine; 
+}
+
+/*------ LAYOUT ---------*/
+
+/*------ header ---------*/
+
+header {
+    width: 100%;
+    height: 70px;
+    background-color: white;
+}
+
+.row-container {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 20px;
+}
+
+.header-left, .header-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.text-logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header-left img {
+    height: 50px;
+}
+
+.btn-play {
+    padding: 0px 20px;
+}
+
+/*------ main ---------*/
+
+#grid {
+    background-color: orange;
+    width: 500px;
+    height: 500px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.square { 
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+    background-color: blue;
+    color: white;
+    border: 2px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.click-cell {
+    background-color: red;
+}
+
+/*------ footer ---------*/
+
+footer {
+    width: 100%;
+    height: 80px;
+    background-color: white;
+}
