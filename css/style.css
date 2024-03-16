@@ -7,10 +7,10 @@
 }
 
 body {
-    font-family: "Roboto", sans-serif;
+    font-family: "Protest Revolution", sans-serif;
     font-weight: 400;
     font-style: normal;
-    background-color: aquamarine;
+    background-color: tan;
 }
 
 /*------ LAYOUT ---------*/
@@ -47,21 +47,27 @@ header {
 
 .btn-play {
     padding: 0px 20px;
+    cursor: pointer;
 }
 
 /*------ main ---------*/
 
-main {
-    background-image: url('css/img/naruto-pattern.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+ main {
+    background-image: url('./img/simbolo-konoha.png');
+    background-repeat: repeat;
+    padding: 20px 0;
+    overflow-y: hidden;
 }
 
 #grid {
-    background-color: orange;
-    width: 500px;
-    height: 500px;
-    margin: 50px auto;
+    background-color: #FFB94D;
+    background-image: url('./img/pattern.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 4px;
+    width: 400px;
+    height: 400px;
+    margin: 0px auto;
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
@@ -70,17 +76,35 @@ main {
 .square { 
     width: calc(100% / 10);
     height: calc(100% / 10);
-    background-color: blue;
-    color: white;
-    border: 2px solid gray;
+    font-size: 15px;
+    font-weight: 800;
+    background-color: #FFB94D;
+    color: rgb(172, 0, 0);
+    border: 2px solid rgb(118, 74, 42);
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
 }
 
+.easy {
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+}
+.normal {
+    width: calc(100% / 9);
+    height: calc(100% / 9);
+}
+.hard {
+    width: calc(100% / 7);
+    height: calc(100% / 7);
+}
+
 .click-cell {
-    background-color: red;
+    background-color: yellow;
+    background-image: url('./img/minato-kunai.png');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /*------ footer ---------*/
@@ -89,4 +113,28 @@ footer {
     width: 100%;
     height: 80px;
     background-color: white;
+    position: fixed;
+}
+
+/*------ RESPONSIVE -----------*/
+
+@media screen and (max-width: 500px) {
+    #grid {
+        border-radius: 2px;
+        width: 200px;
+        height: 200px;
+    }
+    .square {
+        font-size: 9px;
+    }
+    .header-left img {
+        height: 25px;
+    }
+    .text-logo {
+        font-size: 12px;
+
+    }
+    .header-right * {
+        font-size: 8px;
+    }
 }
