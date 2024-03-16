@@ -94,6 +94,7 @@ header {
 .normal {
     width: calc(100% / 9);
     height: calc(100% / 9);
+    border: 3px solid rgb(118, 74, 42);
 }
 .hard {
     width: calc(100% / 7);
