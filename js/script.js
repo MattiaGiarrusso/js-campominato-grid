@@ -9,11 +9,17 @@ console.log(mainGrid);
 
 const btn = document.querySelector('.btn-play');
 console.log(btn);
-btn.addEventListener('click', function(){
 
+// Creo la funzione per far partire il ciclo dei quadrati da generare
+btn.addEventListener('click', function(){
+    // richiamo il mainGrid nella funzione per potergli assegnare una stringa vuota da cui partire ad ogni click
+    const mainGrid = document.querySelector('#grid');
+    mainGrid.innerHTML = "";
+
+    // creo una variabile flag
     let difficultNum;
     const difficultSelect = document.querySelector('#difficult').value;
-
+    // creo le condizioni per ricevere il numero di quadrati in base alla difficoltà selezionata
     if (difficultSelect === 'easy'){
         difficultNum = 100;
     } else if (difficultSelect === 'normal'){
