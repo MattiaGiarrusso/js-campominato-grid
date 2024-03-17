@@ -129,13 +129,16 @@ footer {
         font-size: 9px;
     }
     .header-left img {
-        height: 25px;
+        height: 40px;
     }
     .text-logo {
-        font-size: 12px;
-
+        font-size: 14px;
     }
     .header-right * {
         font-size: 8px;
+    }
+    .btn-play {
+        padding: 0px 10px;
+        cursor: pointer;
     }
 }
