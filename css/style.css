@@ -36,9 +36,11 @@ header {
     gap: 10px;
 }
 
-.text-logo {
+.text-logo a {
     font-size: 24px;
     font-weight: bold;
+    text-decoration: none;
+    color: black;
 }
 
 .header-left img {
@@ -136,7 +138,7 @@ footer .row-container {
     .header-left img {
         height: 44px;
     }
-    .text-logo {
+    .text-logo a {
         font-size: 14px;
     }
     .header-right * {
