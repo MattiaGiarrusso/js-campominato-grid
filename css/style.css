@@ -95,6 +95,7 @@ header {
 .normal {
     width: calc(100% / 9);
     height: calc(100% / 9);
+
 }
 .hard {
     width: calc(100% / 7);
