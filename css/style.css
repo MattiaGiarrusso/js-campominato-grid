@@ -57,7 +57,7 @@ header {
     background-size: 10%;
     background-repeat: repeat;
     height: 100vh;
-    overflow-y: hidden;
+    overflow-y: auto;
 }
 
 #grid {
@@ -118,6 +118,10 @@ footer {
     position: sticky;
 }
 
+footer .row-container {
+    padding: 30px 0;
+}
+
 /*------ RESPONSIVE -----------*/
 
 @media screen and (max-width: 500px) {
@@ -130,7 +134,7 @@ footer {
         font-size: 9px;
     }
     .header-left img {
-        height: 40px;
+        height: 44px;
     }
     .text-logo {
         font-size: 14px;
