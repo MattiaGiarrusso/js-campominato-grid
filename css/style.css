@@ -61,10 +61,10 @@ header {
 }
 
 #grid {
-    background-color: #FFB94D;
-    background-image: url('./img/pattern.jpg');
+    background-color: transparent;
+    background-image: url('./img/minato.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     width: 400px;
     height: 400px;
     margin: 0 auto;
@@ -95,7 +95,6 @@ header {
 .normal {
     width: calc(100% / 9);
     height: calc(100% / 9);
-    border: 3px solid rgb(118, 74, 42);
 }
 .hard {
     width: calc(100% / 7);
