@@ -54,6 +54,7 @@ header {
 
  main {
     background-image: url('./img/simbolo-konoha.png');
+    background-size: 10%;
     background-repeat: repeat;
     height: 100vh;
     overflow-y: hidden;
