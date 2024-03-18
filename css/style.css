@@ -49,7 +49,10 @@ header {
 
 .btn-play {
     padding: 0px 20px;
-    cursor: pointer;
+    cursor: pointer; 
+    border-radius: 10px solid orange;
+    color: white;
+    background-color: orange;
 }
 
 /*------ main ---------*/
